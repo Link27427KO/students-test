@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu-bar {
+  display: flex;
+  background-color: #FFFFFF;
+  border: none!important;
+  height: 60px;
+  text-transform: uppercase;
+
+  .p-menuitem-text {
+    color: #777777!important;
+    font-size: 14px;
+  }
+
+  .p-submenu-icon {
+    font-size: 14px;
+  }
+
+  .p-menuitem-icon {
+    font-size: 14px;
+  }
+
+  .p-menuitem {
+    &:first-child {
+      margin-left: 280px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 50px;
+    }
+
+    &:nth-child(5) {
+      .p-menuitem-link {
+        background-color: rgba(166, 25, 46, 1) !important;
+
+        .p-menuitem-text {
+          color: rgb(255, 255, 255) !important;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .p-submenu-list {
+    .p-menuitem {
+      position: relative;
+      margin: 0;
+      right: 0;
+      &:nth-child(5) {
+        .p-menuitem-link {
+          background-color: #FFFFFF!important;
+
+          .p-menuitem-text {
+            color: #5B5B5B!important;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+
+  ul li {
+    margin-left: 25px;
+  }
+
+  .p-menuitem-link {
+    border-radius: 0!important;
+    box-shadow: none!important;
+
+    &:focus {
+      box-shadow: none!important;
+    }
+
+    &:hover {
+      background-color: #FFFFFF!important;
+    }
+  }
+
+  .p-menuitem-active {
+    .p-menuitem-link {
+      background-color: #FFFFFF!important;
+      .p-menuitem-text {
+        color: #5B5B5B!important;
+      }
+      .p-submenu-icon {
+        color: #5B5B5B!important;
+      }
+
+      .p-menuitem-icon {
+        color: #5B5B5B!important;
+      }
+    }
+    .p-submenu-list {
+      text-transform: uppercase;
+      .p-menuitem-link {
+        &:hover {
+          background-color: #F2F2F2!important;
+
+          .p-menuitem-text {
+            color: #5B5B5B!important;
+          }
+
+          .p-submenu-icon {
+            color: #5B5B5B!important;
+          }
+
+          .p-menuitem-icon {
+            color: #5B5B5B!important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.under-bar {
+  height: 40px;
+  background-color: #5B5B5B;
+  top: 60px;
+  left: 0;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0!important;
+  border: none!important;
+  display: flex;
+  justify-content: center;
+
+  .p-menuitem-link {
+    box-shadow: none!important;
+    border-radius: 0!important;
+    padding: 20px!important;
+    height: 40px;
+
+    &:last-child {
+      font-weight: bold;
+    }
+
+    &:hover {
+      background-color: #F2F2F2!important;
+
+      .p-menuitem-text {
+        color: #5B5B5B!important;
+      }
+
+      .p-menuitem-icon {
+        color: #5B5B5B!important;
+      }
+
+      .p-submenu-icon {
+        color: #5B5B5B!important;
+      }
+    }
+  }
+
+  .p-menuitem-active {
+    .p-menuitem-link {
+      background-color: #F2F2F2!important;
+      .p-menuitem-text {
+        color: #5B5B5B!important;
+      }
+      .p-submenu-icon {
+        color: #5B5B5B!important;
+      }
+
+      .p-menuitem-icon {
+        color: #5B5B5B!important;
+      }
+    }
+    .p-submenu-list {
+      background-color: #5B5B5B!important;
+      text-transform: uppercase;
+      .p-menuitem-link {
+        background-color: #5B5B5B!important;
+        box-shadow: none!important;
+
+        .p-menuitem-text {
+          color: #F2F2F2!important;
+          font-weight: normal;
+        }
+
+        .p-submenu-icon {
+          color: #F2F2F2!important;
+        }
+
+        .p-menuitem-icon {
+          color: #F2F2F2!important;
+        }
+
+        &:hover {
+          background-color: #F2F2F2!important;
+
+          .p-menuitem-text {
+            color: #5B5B5B!important;
+          }
+
+          .p-submenu-icon {
+            color: #5B5B5B!important;
+          }
+
+          .p-menuitem-icon {
+            color: #5B5B5B!important;
+          }
+        }
+      }
+    }
+  }
+
+  .p-submenu-icon {
+    color: #C0C0C0!important;
+    font-size: 12px;
+  }
+
+  .p-menuitem-icon {
+    color: #C0C0C0!important;
+    font-size: 12px;
+  }
+
+  .p-menuitem-text {
+    color: #C0C0C0!important;
+    font-size: 12px;
+  }
+}
+
+.menu-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-avatar {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.hc-avatar {
+  padding-right: 10px;
+}

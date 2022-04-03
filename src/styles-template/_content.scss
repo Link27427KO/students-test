@@ -1,0 +1,47 @@
+
+.red-score {
+  color: #DB4437;
+}
+
+.yellow-score {
+  color: #E2B534;
+}
+
+.green-score {
+  color: #0F9D58;
+}
+
+.blue-score {
+  color: #4285F4;
+}
+
+.below-expected {
+  color: #DB4437;
+}
+
+.above-expected {
+  color: #4285F4
+}
+
+.as-expected {
+  color: #0F9D58;
+}
+.parents {
+  display: flex;
+  align-items: center;
+  &__no {
+    margin-left: 25px;
+    color: #C0C0C0;
+  }
+  &__added {
+    color: #828282;
+  }
+  &__icon {
+    color: #C0C0C0;
+    margin-right: 10px;
+  }
+}
+
+.default-color {
+  color: #828282;
+}
